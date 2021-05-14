@@ -1,0 +1,67 @@
+.Home
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 100%
+    min-height: 100vh
+    height: 100%
+    background-image: url("../../images//spaceX.png")
+    background-size: cover
+    background-repeat: no-repeat
+    .historyBar
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: flex-start
+        min-height: calc(90vh - 40px)
+        max-height: calc(90vh - 40px)
+        padding: 20px 0
+        overflow-y: scroll
+        width: 220px
+        top: 75px
+        left: 0
+        position: fixed
+        color: white
+        font-size: 24px
+        z-index: 1
+        border-right: 1px solid white
+        // border: 1px solid white
+        background-color: rgba(0, 0, 0, .6)
+    .search
+        display: flex
+        width: 760px
+        align-items: center
+        justify-content: space-evenly
+        color: white
+        input
+            width: 180px
+            height: 25px
+            padding: 2px 0 2px 8px
+            outline: none
+            &:hover
+                outline: 1px solid white
+    .main
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-top: 30px
+        width: calc(100% - 220px)
+        margin-left: 220px
+        .results
+            margin: 10px 0 20px 0
+            width: 800px
+            height: calc(100vh - 170px)
+            padding: 10px
+            border-left: 1px solid white
+            border-right: 1px solid white
+            overflow-y: scroll
+            .resultContainer
+                display: flex
+                flex-direction: column
+                align-items: flex-start
+                margin: 10px 0
+                padding: 10px 0
+                border: 1px solid white
+                color: white
+                .resultItem
+                    margin: 3px 0 3px 10px
